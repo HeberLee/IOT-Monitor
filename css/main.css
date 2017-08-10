@@ -52,7 +52,10 @@ body {
     margin-bottom: 20px;
     margin-left: 5px;
 }
-
+.aActive{
+    background-color:rgb(92,184,92);
+    color:#ffffff;    
+}
 
 /*我的信息*/
 
