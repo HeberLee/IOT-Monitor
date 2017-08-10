@@ -1,9 +1,12 @@
 body {
-    background-color: #f9f9f9;
     padding: 0;
+    background-color: #f9f9f9;
     margin: 0;
-    height: 1000px;
     font-family: '微软雅黑';
+}
+
+.main {
+    height: 1000px;
 }
 
 .row {
@@ -49,13 +52,7 @@ body {
     margin-bottom: 20px;
     margin-left: 5px;
 }
-.dropdown-menu>li>a.aActive{
-    background-color: #5CB85C;
-    color: white;!important;
-}
-.pointer{
-    cursor: pointer;
-}
+
 
 /*我的信息*/
 
@@ -65,17 +62,17 @@ body {
     border-bottom: 2px solid #e6e6e6;
     overflow: hidden;
 }
+
 .editInfo {
     line-height: 40px;
     margin-top: 15px;
     margin-right: 20px;
 }
+
 .fa {
     margin-right: 10px;
 }
-.fa.fa-pencil ,.fa.fa-cog{
-    margin-right:5px;
-}
+
 
 /* 登录 */
 
@@ -90,8 +87,6 @@ body {
 }
 
 .login {
-    width: 400px;
-    height: 300px;  
     position: fixed;
     border-radius: 10px;
     z-index: 1001;
@@ -106,10 +101,6 @@ body {
     width: 100%;
 }
 
-.box {
-    height: 500px;
-    width: 700px;
-}
 
 .BMap_bubble_title {
     text-align: center;
@@ -128,13 +119,23 @@ body {
 }
 
 .map-table td span {
-    width: 120px;
     height: 100%;
-    line-height: 40px;
+    width: 90%;
+    line-height: 34px;
     font-size: 24px;
     font-weight: 700;
     display: inline-block;
     padding-top: 10px;
-    margin: 10px 10px;
     background: #1163b9;
+}
+
+
+/* footer */
+.footer {
+    text-align: center;
+    height: 60px;
+    line-height: 60px;
+    width: 100%;
+    color: #fff;
+    background: #575757;
 }

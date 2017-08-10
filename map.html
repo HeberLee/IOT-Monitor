@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>map</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/reset.css">
+  <link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.css">
+  <link rel="stylesheet" href="css/main.css">
+
+</head>
+
+<body>
+  <!-- main -->
+  <div class="main">
+    <!-- 导航 -->
+    <nav class="navbar navbar-default" role="navigation">
+      <div class="navbar-header pull-left">
+        <a class="navbar-brand" href="#">通风柜状态监测</a>
+      </div>
+      <div class="pull-right sign">
+        <a class="btn btn-sm btn-primary" id="loginBtn" href="javascript:;">登录</a>
+      </div>
+    </nav>
+    <!-- container -->
+    <div class="row" id="vueRow">
+
+      <!--左侧占位区-->
+      <div class="col-lg-1 col-md-1"></div>
+
+      <!--左侧导航区-->
+      <div class="col-lg-2 col-md-2">
+        <ul class="nav nav-pills nav-stacked">
+          <hr>
+          <li class=""><a href="information.html"><i class="fa fa-address-card"></i>我的信息</a>
+          </li>
+          <li class=""><a href="echarts.html"><i class="fa fa-area-chart"></i>数据监测</a>
+          </li>
+          <li class=""><a href="#"><i class="fa fa-video-camera"></i>视频监测</a>
+          </li>
+          <li class=""><a href="#"><i class="fa fa-cog"></i>控制台</a>
+          </li>
+          <li class=""><a href="#"><i class="fa  fa-file-text"></i>标准说明</a>
+          </li>
+          <li class="active"><a href="#"><i class="fa fa-map-marker"></i>地图</a>
+          </li>
+        </ul>
+      </div>
+
+      <!--我的map-->
+      <div class=" col-lg-8 col-md-8">
+        <div class=" panel panel-default">
+          <div class="panel-heading">
+            <h3 class="panel-title">地图</h3>
+          </div>
+          <div class="">
+            <div id="l-map"></div>
+          </div>
+        </div>
+      </div>
+      <!-- 右侧占位 -->
+      <div class="col-lg-1 col-md-1"></div>
+
+    </div>
+  </div>
+  <!-- footer -->
+  <div class="footer">
+    长海现代&copy;
+  </div>
+  <!-- footer end -->
+  <script src="https://cdn.bootcss.com/jquery/2.1.1/jquery.min.js"></script>
+  <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=Eo0Ga2S25iAqZ8DyWdpyUge97LqqLBob"></script>
+
+  <script src="js/map.js"></script>
+  <script src="js/vue.js"></script>
+  <script src="js/vue-resource.js"></script>
+  <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="js/login.js"></script>
+</body>
+
+</html>
