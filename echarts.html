@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>echarts</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.css">
+    <link rel="stylesheet" href="css/main.css">
+
+    <style type="text/css">
+
+    </style>
+</head>
+
+<body>
+<nav class="navbar navbar-default" role="navigation">
+    <div class="navbar-header pull-left">
+        <a class="navbar-brand" href="#">通风柜状态监测</a>
+    </div>
+    <div class="pull-right sign">
+        <a class="btn btn-sm btn-primary" id="loginBtn" href="javascript:;">登录</a>
+    </div>
+</nav>
+<div class="row " id="vueRow">
+
+    <!--左侧占位区-->
+    <div class="col-lg-1 col-md-1"></div>
+
+    <!--左侧导航区-->
+    <div class="col-lg-2 col-md-2 nav_left">
+        <ul class="nav nav-pills nav-stacked">
+            <hr>
+            <li class=""><a href="information.html"><i class="fa fa-address-card"></i>我的信息</a>
+            </li>
+            <li class="active"><a href="echarts.html"><i class="fa fa-area-chart"></i>数据监测</a>
+            </li>
+            <li class=""><a href="#"><i class="fa fa-video-camera"></i>视频监测</a>
+            </li>
+            <li class=""><a href="#"><i class="fa fa-cog"></i>控制台</a>
+            </li>
+            <li class=""><a href="#"><i class="fa  fa-file-text"></i>标准说明</a>
+            </li>
+            <li class=""><a href="map.html"><i class="fa fa-map-marker"></i>地图</a>
+            </li>
+        </ul>
+
+    </div>
+
+    <!--数据展示区-->
+    <div class="col-lg-8 col-md-8">
+
+        <!--按钮设置区-->
+        <div class="dataChoose">
+            <div class="btn-group">
+                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">图表类型<span
+                        class="caret"></span></button>
+                <ul class="dropdown-menu" role="menu">
+                    <li><a class="pointer series0 aActive">折线图</a></li>
+                    <li><a class="pointer series1">柱形图</a></li>
+                </ul>
+            </div>
+            <button class="btn btn-default realTimeBtn" style="outline: none" onclick="turn()" title="每三分钟自动刷新">实时数据
+            </button>
+            <div class="btn-group">
+                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">历史数据 <span
+                        class="caret"></span></button>
+                <ul class="dropdown-menu" role="menu">
+                    <li><a href="#">过去24小时</a></li>
+                    <li><a href="#">过去一周</a></li>
+                    <li><a href="#">过去一月</a></li>
+                    <li><a href="#">所有时间</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!--温度数据-->
+        <div class="card">
+            <div id="temperature" style="width: 100%;height:400px;"></div>
+        </div>
+        <hr>
+        <!--湿度数据-->
+        <div class="card">
+            <div id="humidity" style="width: 100%;height:400px;"></div>
+        </div>
+        <hr>
+        <!--风速数据-->
+        <div class="card">
+            <div id="wind" style="width: 100%;height:400px;"></div>
+        </div>
+    </div>
+
+    <!--右侧占位-->
+    <div class="col-lg-1"></div>
+</div>
+
+<!-- <div class="mask"></div>
+<div class="login">
+</div> -->
+<script src="js/vue.js"></script>
+<script src="js/vue-resource.js"></script>
+<script src="js/login.js"></script>
+<script src="https://cdn.bootcss.com/jquery/2.1.1/jquery.min.js"></script>
+<script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="https://cdn.bootcss.com/echarts/3.6.2/echarts.min.js"></script>
+<script src="js/main.js"></script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        seriesType = 'line';
+        showAllData();
+        $('.series1').attr("onclick", "turnSeriesType()");
+    });
+</script>
+</body>
+
+</html>
