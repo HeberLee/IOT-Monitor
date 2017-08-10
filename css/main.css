@@ -46,18 +46,19 @@ body {
     margin-bottom: 10px;
 }
 
-
 /*数据展示区*/
 
 .dataChoose {
     margin-bottom: 20px;
     margin-left: 5px;
 }
-.aActive{
+.dropdown-menu>li>a.aActive{
     background-color:rgb(92,184,92);
-    color:#ffffff;    
+    color:#ffffff;
 }
-
+.pointer{
+    cursor: pointer;
+}
 /*我的信息*/
 
 .myInfoData {

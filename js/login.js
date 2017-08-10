@@ -25,7 +25,7 @@
       'group"><label for="">密码</label><input class="form-control" type="' +
       'password" placeholder=""></div><div class="text-right"><button class=' +
       '"btn btn-primary" type="submit">登录</button><button class="btn btn-danger" ' +
-      'data-dismiss="modal">取消</button> </div></form></div>'
+      'data-dismiss="modal">取消</button> </div></form></div>';
 
     mask.className = 'mask';
     mask.style.height = sHeight + 'px';
@@ -45,13 +45,13 @@
   // 登录按钮点击
   loginBtn.onclick = function () {
     openLogin();
-  }
+  };
 
   // 遮罩点击
   mask.onclick = function () {
     document.body.removeChild(mask);
     document.body.removeChild(login);
-  }
+  };
 
   // 浏览器变化时登录框保持居中
   window.onresize = function () {
@@ -66,4 +66,4 @@
     login.style.left = (sWidth - loginWidth) / 2 + 'px';
     mask.style.width = sWidth + 'px';
   }
-})()
+})();
