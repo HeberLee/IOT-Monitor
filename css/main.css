@@ -7,6 +7,7 @@ body {
 
 .main {
     height: 1000px;
+    overflow: hidden;
 }
 
 .row {
@@ -45,15 +46,24 @@ body {
     margin-bottom: 10px;
 }
 
-
 /*数据展示区*/
 
 .dataChoose {
     margin-bottom: 20px;
     margin-left: 5px;
 }
+<<<<<<< HEAD
 
 
+=======
+.dropdown-menu>li>a.aActive{
+    background-color:rgb(92,184,92);
+    color:#ffffff;
+}
+.pointer{
+    cursor: pointer;
+}
+>>>>>>> origin/master
 /*我的信息*/
 
 .myInfoData {
