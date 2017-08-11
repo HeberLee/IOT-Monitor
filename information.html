@@ -11,77 +11,81 @@
 </head>
 
 <body>
-<nav class="navbar navbar-default" role="navigation">
-    <div class="navbar-header pull-left">
-        <a class="navbar-brand" href="#">通风柜状态监测</a>
-    </div>
-    <div class="pull-right sign">
-        <a class="btn btn-sm btn-primary" id="loginBtn" href="javascript:;">登录</a>
-    </div>
-</nav>
-<div class="row " id="vueRow">
-
-    <!--左侧占位区-->
-    <div class="col-lg-1 col-md-1"></div>
-
-    <!--左侧导航区-->
-    <div class="col-lg-2 col-md-2 nav_left">
-        <ul class="nav nav-pills nav-stacked">
-            <hr>
-            <li class="active"><a href="information.html"><i class="fa fa-address-card"></i>我的信息</a>
-            </li>
-            <li class=""><a href="echarts.html"><i class="fa fa-area-chart"></i>数据监测</a>
-            </li>
-            <li class=""><a href="#"><i class="fa fa-video-camera"></i>视频监测</a>
-            </li>
-            <li class=""><a href="#"><i class="fa fa-cog"></i>控制台</a>
-            </li>
-            <li class=""><a href="#"><i class="fa  fa-file-text"></i>标准说明</a>
-            </li>
-            <li class=""><a href="map.html"><i class="fa fa-map-marker"></i>地图</a>
-            </li>
-        </ul>
-
-    </div>
-
-    <!--我的信息-->
-    <div id="myInfo" class="col-lg-8 col-md-8">
-        <div class="myInfoData">
-            <a class="pull-right editInfo" href="" title="编辑"><i class="fa fa-pencil"></i>编辑</a>
-            <h3>基础资料</h3>
+<!-- main -->
+<div class="main">
+    <!--nav-->
+    <nav class="navbar navbar-default" role="navigation">
+        <div class="navbar-header pull-left">
+            <a class="navbar-brand" href="#">通风柜状态监测</a>
         </div>
-        <div class="myInfoData">
-            <span>用户名：</span>
-            <span>XXX</span>
+        <div class="pull-right sign">
+            <a class="btn btn-sm btn-primary" id="loginBtn" href="javascript:;">登录</a>
         </div>
-        <div class="myInfoData">
-            <span>密码：</span>
-            <span>XXX</span>
-        </div>
-        <div class="myInfoData">
-            <span>注册邮箱:</span>
-            <span>a65465131@sad.com</span>
-        </div>
-        <div class="myInfoData">
-            <a class="pull-right editInfo" href="" title="管理"><i class="fa fa-cog"></i>管理</a>
-            <h3>设备信息</h3>
-        </div>
-        <div class="myInfoData">
-            <span>设备ID：</span>
-            <span>1515646465156</span>
-        </div>
-    </div>
+    </nav>
+    <!--container-->
+    <div class="row " id="vueRow">
 
-    <div>
+        <!--左侧占位区-->
+        <div class="col-lg-1 col-md-1"></div>
 
+        <!--左侧导航区-->
+        <div class="col-lg-2 col-md-2 nav_left">
+            <ul class="nav nav-pills nav-stacked">
+                <hr>
+                <li class="active"><a href="information.html"><i class="fa fa-address-card"></i>我的信息</a>
+                </li>
+                <li class=""><a href="echarts.html"><i class="fa fa-area-chart"></i>数据监测</a>
+                </li>
+                <li class=""><a href="#"><i class="fa fa-video-camera"></i>视频监测</a>
+                </li>
+                <li class=""><a href="#"><i class="fa fa-cog"></i>控制台</a>
+                </li>
+                <li class=""><a href="#"><i class="fa  fa-file-text"></i>标准说明</a>
+                </li>
+                <li class=""><a href="map.html"><i class="fa fa-map-marker"></i>地图</a>
+                </li>
+            </ul>
+
+        </div>
+
+        <!--我的信息-->
+        <div id="myInfo" class="col-lg-8 col-md-8">
+            <div class="myInfoData">
+                <a class="pull-right editInfo" href="" title="编辑"><i class="fa fa-pencil"></i>编辑</a>
+                <h3>基础资料</h3>
+            </div>
+            <div class="myInfoData">
+                <span>用户名：</span>
+                <span>XXX</span>
+            </div>
+            <div class="myInfoData">
+                <span>密码：</span>
+                <span>XXX</span>
+            </div>
+            <div class="myInfoData">
+                <span>注册邮箱:</span>
+                <span>a65465131@sad.com</span>
+            </div>
+            <div class="myInfoData">
+                <a class="pull-right editInfo" href="" title="管理"><i class="fa fa-cog"></i>管理</a>
+                <h3>设备信息</h3>
+            </div>
+            <div class="myInfoData">
+                <span>设备ID：</span>
+                <span>1515646465156</span>
+            </div>
+        </div>
+
+        <div>
+
+        </div>
     </div>
 </div>
-
 <!-- footer -->
-<!--<div class="footer infoFooter">-->
-    <!--长海现代&copy;-->
-<!--</div>-->
-<!-- footer end -->
+<div class="footer infoFooter">
+    长海现代&copy;
+</div>
+ <!--footer end -->
 <script src="js/vue.js"></script>
 <script src="js/vue-resource.js"></script>
 <script src="https://cdn.bootcss.com/jquery/2.1.1/jquery.min.js"></script>
