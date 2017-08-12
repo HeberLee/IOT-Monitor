@@ -2,4 +2,4 @@
 
 ### Psilo and Simmzl
 
-http://simmzl.github.io/IOT-Monitor/echarts.html
+Demo:http://simmzl.github.io/IOT-Monitor/echarts.html
